@@ -1,1 +1,41 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar color="black">
+      <ion-title>Electric Line</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="openPage( home )">
+        Inicio
+      </button>
+      <button ion-item (click)="openPage( perfilUser )">
+        Perfil
+      </button>
+      <button ion-item (click)="openPage( eventos )"> 
+        Eventos
+      </button>
+      <button ion-item (click)="openPage( votaciones )"> 
+        Votaciónes
+      </button>
+      <button ion-item (click)="openPage( rankingDJ )"> 
+        Ranking de DJ's
+      </button>
+      <button ion-item (click)="openPage( rankingDJ )"> 
+        DJ's
+      </button>
+      
+      <ion-list-header>
+      </ion-list-header>
+      <button ion-item (click)="openPage( aboutOf )"> 
+        Acerca de...
+      </button>
+      <button ion-item (click)="logout()">
+        Logout
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content></ion-nav>

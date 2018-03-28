@@ -1,0 +1,59 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>
+      Electric Line
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding
+		type="overlay"
+		class="body">
+
+	<div class="logo">
+		<img src="assets/imgs/appicon.png" alt="Ionic logo">
+	</div>
+
+
+	<!-- OPCIONES PARA INICIAR SESSION Y REGISTRARSE -->
+	<ion-list>
+
+	  <ion-item>
+	    <ion-label floating>Username</ion-label>
+	    <ion-input type="text"></ion-input>
+	  </ion-item>
+
+	  <ion-item>
+	    <ion-label floating>Password</ion-label>
+	    <ion-input type="password"></ion-input>
+	  </ion-item>
+
+	</ion-list>
+
+	<button ion-button
+		color="dark"
+		(click)="loginAnalyze()"
+		block>
+		Iniciar Sesión
+	</button>
+
+	<h5 style="text-align: center; color: white;">
+		¿Olvidaste tu contraseña?
+	</h5>
+
+	<button ion-button
+		block>
+		Iniciar Sesión con Facebook
+	</button>
+
+</ion-content>
+
+<!-- <ion-footer>
+	<ion-toolbar
+		color="black">
+		<p style="color:white; float: left;">POWERED BY <span style="color:#488aff;">DEVELOP LINE</span></p>
+	   <p style="color:white; text-align: right;">Versión: 0.1.0</p>
+	</ion-toolbar>
+</ion-footer> -->

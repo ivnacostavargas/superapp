@@ -1,0 +1,59 @@
+<ion-header>
+
+  <ion-navbar color="black">
+  	<!-- Label to show to menu -->
+	<ion-buttons style="float: left;">
+      <button ion-button
+          icon-only 
+          menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+    </ion-buttons>
+    <!-- End Menu -->
+    <ion-title>Perfil de Usuario</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <div class="logo">
+    <img src="assets/imgs/avatar.jpg" alt="Ionic logo">
+  </div>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Nombre</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Correo</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Lugar de origen</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>DJ Favorito</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button
+    color="dark"
+    block>
+    Guardar
+  </button>
+
+</ion-content>
